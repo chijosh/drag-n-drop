@@ -4,10 +4,32 @@
 
 body {
   background-color: #264653;
+  position: relative;
 }
 
 .bar {
   display: flex;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media (max-device-width: 640px) {
+  .bar {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #e9c46a;
+    border-radius: 8px;
+  }
 }
 
 .item-drag {
