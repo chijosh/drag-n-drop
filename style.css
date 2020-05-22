@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #264653;
+}
+
 .bar {
-  height: 20px;
-  position: relative;
-  background: #ebebeb;
-  list-style: none;
+  display: flex;
 }
 
 .item-drag {
@@ -18,12 +19,22 @@
 }
 
 .item {
-  cursor: default;
-  margin: 0 10px;
+  background-color: #e9c46a;
+  height: 50vh;
+  width: 20vw;
+  margin: 0 15px;
+  border-radius: 5px;
+  padding: 10px 10px;
 }
 
 .item-text {
-  position: relative;
+  display: inline-block;
+  height: 40px;
+  width: 16vw;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background-color: #2a9d8f;
+  margin-bottom: 5px;
 }
 
 .item:hover {
@@ -33,16 +44,6 @@
 
 .item-text__list {
   display: none;
-}
-
-.open {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  list-style-type: none;
-  text-align: center;
-  top: 18px;
-  left: -40px;
 }
 
 .item-text__list__items {
